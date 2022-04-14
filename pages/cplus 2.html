@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="./images/poker-jeton.png">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d3255ff586.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <title>Jeux du C+/C-</title>
+
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="header__navbar">
+                <div class="header__navbar--menu">
+                    <a href="../index.html" class="header__navbar--menu-link"><i class="fas fa-house-user" aria-hidden="true"></i> Accueil</a>
+                </div>
+                <div class="header__navbar--toggle">
+                    <span class="header__navbar--toggle-icons"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-cc">
+            <form>
+                <p>
+                    <label for="nb">Tape ton nombre : </label><input id="nb" type="nombre" name="nb" class="text" placeholder="Ex : 65"/><br />
+                    <input id="clickme" type="button" class="btn2" value="Validé" />
+                </p>
+            </form>
+            <p id="res"></p>
+        </div>
+		 
+		<script src = "../scripts/c+c-.js"></script>
+    </body>
+</html>

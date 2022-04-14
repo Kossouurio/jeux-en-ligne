@@ -1,0 +1,138 @@
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="../images/poker-jeton.png">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d3255ff586.js" crossorigin="anonymous"></script>
+
+        <title>Le casino inferno</title>
+
+        <script language="JavaScript">
+        function nb_aleatoire(nb)
+        {
+        nombre= Math.floor(Math.random() * nb)+1;
+        }
+        
+        tirage = new Array;//tirage aléatoire
+        place = new Array;
+        choix=0;nbim2=0;nbim3=0;
+        choixim=1
+        gain=0;
+        nombres="";
+        divs=20/2;
+        nb=20+1;
+        cpt=0;
+        
+        for (i=1 ;i<nb ;i++)
+        {
+        nb_aleatoire(20);
+        tirage[i]= nombre;
+        for (t=1 ; t<i ;t++){
+        if (tirage[t]==nombre)
+        {
+        i=i-1;
+        }}}
+        for (i=1 ;i<nb ;i++)
+        {
+        if (tirage[i]>divs) nbtire=tirage[i]-divs;
+        else nbtire=tirage[i];
+        place[i]=nbtire;
+        }
+        
+        
+        function changeimg(nbim) { //
+        if (place[nbim] !=0) {
+        if (nbim==nbim2) nbim=0;
+        else{
+        if (nbim==nbim3) nbim=0;
+        else{
+        if (choixim==3)
+        {
+        if (val1==val2) {efface(nbim2);efface(nbim3);gain++;}
+        else {no_efface(nbim2);no_efface(nbim3);}
+        choixim=1;nbim3=0
+        }
+        if (choixim==1) {nbim2=nbim;val1=place[nbim];choix++;}
+        if (choixim==2) {nbim3=nbim;val2=place[nbim];}
+        choixim++;
+        }}
+        document.images[nbim-1].src = "../images/carte"+place[nbim]+".png";
+        if (choixim==3){if (gain==divs-1) {
+        setTimeout("efface(nbim2);efface(nbim3);document.images[1].src = '../images/gg.gif';",500);gain++;
+        }}
+        document.form1.result.value = choix
+        }}
+        
+        function efface(eff) {
+        document.images[eff-1].src="../images/carte-dos.png";
+        place[eff]=0}
+        
+        function no_efface(eff) {
+        document.images[eff-1].src="../images/carte-dos.png";}
+        </script>
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="header__navbar">
+                <div class="header__navbar--menu">
+                    <a href="../index.html" class="header__navbar--menu-link"><i class="fas fa-house-user" aria-hidden="true"></i> Accueil</a>
+                </div>
+                <div class="header__navbar--toggle">
+                    <span class="header__navbar--toggle-icons"></span>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <table class="tabl">
+                <tr>
+                    <td><a href="#" onclick="changeimg(1)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(2)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(3)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(4)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(5)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="changeimg(6)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(7)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(8)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(9)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(10)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="changeimg(11)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(12)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(13)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(14)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(15)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="changeimg(16)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(17)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(18)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(19)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                    <td><a href="#" onclick="changeimg(20)"><img class="cartes" src="../images/carte-dos.png" alt="carte de jeux"></a></td>
+                </tr>
+            </table>
+            <form action="" class="partie">
+                <table>
+                    <tr>
+                        <td>Nombre de coups <input name="result" type="text" id="result2" size="5"></td>
+                        <td><button name="Submit" value="Rejouer"><a href="../pages/memory.html">Rejouer</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>Le but du jeu est de retourner <br> les cartes 2 par 2, afin de trouver les cartes identiques</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+    </body>
+
+</html>
+

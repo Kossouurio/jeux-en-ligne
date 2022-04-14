@@ -1,0 +1,59 @@
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="./images/poker-jeton.png">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d3255ff586.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <title>Le casino infernal</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="header__navbar">
+                <div class="header__navbar--menu">
+                    <a href="index.html" class="header__navbar--menu-link"><i class="fas fa-house-user" aria-hidden="true"></i> Accueil</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <P>
+                <strong>Bonjour,</strong> <br> Et bienvenue sur le meilleur site de jeux en ligne.
+                <br>
+                J'èspère que vous allez aprécier nôs jeux et que vous aurrez beaucoup de chache car vous en aurrez besion.
+                <br>
+                Cordialement, La Direction.
+            </P>
+        </div>
+
+        <section class="list_jeux">
+            <div class="content" id="">
+                <div class="items">
+                    <h1 class="list">Trier par ordre</h1>
+                    <div class="sort-btn">
+                        <button onClick="trie_croissant()" class="btn">Croissant</button>
+                        <button onClick="trie_decroissant()" class="btn">Décroissant</button>
+                        <button onClick="trie_difficulte()" class="btn">De difficulté</button>
+                    </div>
+                    <div class="items outer" id="tbody">
+                        <a id="tr" class="list child" data-croissant="3" data-difficultelvl="3" href="./pages/memory.html"><b>Jeux du mémory</b></a>
+                        <a id="tr" class="list child" data-croissant="1" data-difficultelvl="1" href="./pages/cplus 2.html"><b>Jeux du c+/c-</b></a>
+                        <a id="tr" class="list child" data-croissant="2" data-difficultelvl="2" href="./pages/cheval.html"><b>Jeux de course de chevaux</b></a>
+                        <a id="tr" class="list child" data-croissant="4" data-difficultelvl="2" href="./pages/Morpion.html"><b>Jeux du morpion</b></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+    </body>
+
+    <script src="./scripts/index.js"></script>
+
+</html>
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="./images/poker-jeton.png">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d3255ff586.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <title>Jeux du morpion</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="header__navbar">
+                <div class="header__navbar--menu">
+                    <a href="../index.html" class="header__navbar--menu-link"><i class="fas fa-house-user" aria-hidden="true"></i> Accueil</a>
+                </div>
+                <div class="header__navbar--toggle">
+                    <span class="header__navbar--toggle-icons"></span>
+                </div>
+            </div>
+        </div>
+        <div class="content-morpion">
+            <hr>
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td id="mo5"><img></td><td id="mo6"><img></td><td id="mo7"><img></td>
+                    </tr>
+                    <tr>
+                        <td id="mo4"><img></td><td id="mo0"><img></td><td id="mo8"><img></td>
+                    </tr>
+                    <tr>
+                        <td id="mo3"><img></td><td id="mo2"><img></td><td id="mo1"><img></td>
+                    </tr>
+                </table>
+                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  <input type="button" id="recommencer" value="recommencer"> score:<input disabled id="score" value="0/0" size=3> <input type="button" id="abandonner" value="abandonner"> </p>
+            <hr>
+        </div>
+    <script type="text/javascript" src = "../scripts/script_morpion.js"></script>
+    </body>
+
+</html>
